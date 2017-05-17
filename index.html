@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Guessing Game</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- Bootstrap and CSS here-->
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+
+      <div id="start-menu">
+        <h1>Click the button to play the guessing game!!!</h1>
+        <button class="btn btn-lg btn-danger" id="start-btn">Start Game</button>
+      </div>
+
+      <div id='app'>
+
+        <div id='headers'>
+          <!-- Title and subtitles! -->
+          <h1>Guess a number between 1-100.</h1>
+          <p class="submission-result"></p>
+        </div>
+
+        <div id='main'>
+          <div id='input-parent'>
+            <!-- Player's guess input, and submit button -->
+            <input type="number" id="current-guess-input" placeholder="#">
+            <button id="submit-guess-btn" class="btn btn-lg btn-success">Guess!</button>
+          </div>
+
+          <div id='guesses'>
+            <h3>Previous Guesses:</h3>
+            <!-- unordered list of guesses -->
+            <ul id="previous-guess-list">
+              <li class="previous-guess-array">-</li>
+              <li class="previous-guess-array">-</li>
+              <li class="previous-guess-array">-</li>
+              <li class="previous-guess-array">-</li>
+              <li class="previous-guess-array">-</li>
+            </ul>
+          </div>
+
+          <div id="menu-btns">
+            <!-- reset and hint buttons -->
+            <button id="reset-btn" class="btn btn-lg btn-danger">Reset</button>
+            <button id="hint-btn" class="btn btn-lg btn-primary">Hint</button>
+            <p class="hint-para"></p>
+          </div>
+        </div>
+      </div>
+
+
+
+    <div id='footer'>
+      <div class='center col-lg-4 col-sm-4'>
+        <img src='fslogo.png'></img>
+      </div>
+
+      <div class='center col-lg-4 col-sm-4'>
+        <h4>Project by Matthew Snow</h4>
+      </div>
+
+      <div class='center col-lg-4 col-sm-4'>
+        <img src='ghlogo.png'></img>
+      </div>
+    </div>
+
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="guessgame.js"></script>
+</html>
